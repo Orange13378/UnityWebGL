@@ -1,0 +1,20 @@
+﻿@model IEnumerable<TCP.Models.User>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+    @foreach (var item in Model)
+    {
+                @Html.DisplayFor(modelItem => item.Id)
+
+                @Html.DisplayFor(modelItem => item.Nickname)
+
+                @Html.DisplayFor(modelItem => item.Email)
+
+                @Html.DisplayFor(modelItem => item.Highscore)
+
+                @Html.DisplayFor(modelItem => item.Password)
+    }
